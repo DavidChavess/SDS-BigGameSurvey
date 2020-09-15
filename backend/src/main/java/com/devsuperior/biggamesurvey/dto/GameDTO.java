@@ -2,10 +2,15 @@ package com.devsuperior.biggamesurvey.dto;
 
 import com.devsuperior.biggamesurvey.entities.enums.Platform;
 
-public class GameDTO {
+import java.io.Serializable;
+
+public class GameDTO implements Serializable {
+
     private Long id;
     private String title;
     private Platform platform;
+
+    public GameDTO(){}
 
     public Long getId() {
         return id;

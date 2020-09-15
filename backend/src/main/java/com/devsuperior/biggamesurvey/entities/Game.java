@@ -25,7 +25,7 @@ public class Game implements Serializable {
     private Genre genre;
 
     @JsonIgnore
-    @OneToMany(mappedBy = "game", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "game")
     private List<Record> records = new ArrayList<>();
 
     public Game(){}

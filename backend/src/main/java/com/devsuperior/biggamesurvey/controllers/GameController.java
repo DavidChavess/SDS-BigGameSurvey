@@ -1,10 +1,7 @@
-package com.devsuperior.biggamesurvey.controller;
+package com.devsuperior.biggamesurvey.controllers;
 
 import com.devsuperior.biggamesurvey.dto.GameDTO;
-import com.devsuperior.biggamesurvey.mapper.MapStruct;
-import com.devsuperior.biggamesurvey.repositories.GameRepository;
-import com.devsuperior.biggamesurvey.service.GameService;
-import org.mapstruct.factory.Mappers;
+import com.devsuperior.biggamesurvey.services.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;

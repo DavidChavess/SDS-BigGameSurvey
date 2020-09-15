@@ -1,4 +1,4 @@
-package com.devsuperior.biggamesurvey.service;
+package com.devsuperior.biggamesurvey.services;
 
 import com.devsuperior.biggamesurvey.dto.GameDTO;
 import com.devsuperior.biggamesurvey.mapper.MapStruct;

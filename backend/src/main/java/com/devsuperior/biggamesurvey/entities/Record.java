@@ -60,6 +60,14 @@ public class Record implements Serializable {
         this.moment = moment;
     }
 
+    public Game getGame() {
+        return game;
+    }
+
+    public void setGame(Game game) {
+        this.game = game;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
