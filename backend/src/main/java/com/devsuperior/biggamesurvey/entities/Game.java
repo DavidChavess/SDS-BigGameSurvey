@@ -1,6 +1,7 @@
 package com.devsuperior.biggamesurvey.entities;
 
 import com.devsuperior.biggamesurvey.entities.enums.Platform;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -18,10 +19,12 @@ public class Game implements Serializable {
 
     private Platform platform;
 
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "genre_id")
     private Genre genre;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "game", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Record> records = new ArrayList<>();
 
