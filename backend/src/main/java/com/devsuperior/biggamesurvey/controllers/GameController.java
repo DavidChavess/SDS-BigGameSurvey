@@ -20,7 +20,7 @@ public class GameController {
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
-    public List<GameDTO> getById(){
+    public List<GameDTO> findAll(){
         return service.findAll();
     }
 }
