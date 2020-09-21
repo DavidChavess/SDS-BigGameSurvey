@@ -21,7 +21,7 @@ const initialPieData = {
     series : []
 };
 
-const BASE_URL = "http://localhost:8080";
+const BASE_URL = "https://sds1-big-game-survey.herokuapp.com";
 
 const Charts = () => {
 
@@ -40,7 +40,6 @@ const Charts = () => {
             const platformData = getPlatformChartData(recordsResponse.data.content);
             setPlatformData(platformData);
 
-            
             const genderData = getGenderChartData(recordsResponse.data.content);
             setGenderData(genderData);
         }

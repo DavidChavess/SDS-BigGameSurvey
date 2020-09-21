@@ -5,7 +5,8 @@ import { formatDate } from './helpers'
 import './styles.css';
 import Pagination from './Pagination';
 import Filters from '../../components/Filters';
-const BASE_URL = "http://localhost:8080";
+
+const BASE_URL = "https://sds1-big-game-survey.herokuapp.com";
 
 const Records = () => {
     
